@@ -156,7 +156,7 @@ export default function SignInPage({ onAuthenticated }) {
               Autonomous Reorder Point Math with Demand Spike Guardrails.
             </h2>
             <p className="mt-3 text-gray-600 text-base leading-relaxed">
-              Eliminate retail shelf stockouts and over-ordering across Central Distribution Centers and retail branches. The agent continuously compares live ERP on-hand &amp; in-transit stock against BI safety thresholds, flags abnormal velocity surges, and generates 1-page ERP Purchase Requisitions.
+              Eliminate retail shelf stockouts and over-ordering across Central Distribution Centers and retail branches. The agent continuously compares live ERP on-hand &amp; in-transit stock against BI safety thresholds, flags abnormal velocity surges, and generates ERP Purchase Requisitions.
             </p>
           </div>
 
@@ -210,14 +210,14 @@ export default function SignInPage({ onAuthenticated }) {
               <div className="flex-1">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold text-gray-900 text-sm sm:text-base">
-                    3. 1-Page ERP Purchase Requisition Authorization
+                    3. ERP Purchase Requisition Authorization
                   </h3>
                   <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">
                     One-Click ERP Release
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-600 mt-1">
-                  Converts approved replenishment orders into auditable ERP Purchase Requisitions (<span className="font-mono">PR-ERP-88410+</span>) with vendor SLA metrics, case pack breakdowns, and print-ready sign-off sheets.
+                  Converts approved replenishment orders into auditable ERP Purchase Requisitions (<span className="font-mono">PR-ERP-88410+</span>) with vendor SLA metrics, case pack breakdowns, and print-ready Purchase Requisition authorization documents.
                 </p>
               </div>
             </div>
