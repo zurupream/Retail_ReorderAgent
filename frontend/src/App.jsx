@@ -21,6 +21,7 @@ import {
   Clock,
 } from 'lucide-react';
 import SignInPage from './components/SignInPage';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 const STORAGE_KEY = 'retail_reorder_agent_user_v1';
 
@@ -191,7 +192,7 @@ export default function App() {
         ...prev,
         {
           role: 'assistant',
-          model: data.model || 'gemini-2.5-flash',
+          model: data.model || 'Enterprise Operations Reasoning Engine',
           text: data.answer || 'No response received.',
         },
       ]);
@@ -257,6 +258,7 @@ export default function App() {
             </div>
             <div>
               <div className="flex items-center gap-2">
+            <ThemeSwitcher />
                 <span className="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0066CC] border border-blue-200">
                   Agent #09 • Supply Chain &amp; Inventory Control
                 </span>
@@ -966,7 +968,7 @@ export default function App() {
             <div className="lg:col-span-4 bg-white rounded-3xl border border-gray-200/90 p-6 shadow-sm space-y-4">
               <div>
                 <span className="text-xs font-mono text-[#0066CC] font-semibold">
-                  GEMINI 2.5 FLASH • VERTEX AI
+                  ENTERPRISE OPERATIONS REASONING ENGINE
                 </span>
                 <h2 className="text-base font-bold text-gray-900 mt-0.5">
                   Replenishment &amp; Inventory Prompts

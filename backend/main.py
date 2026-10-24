@@ -299,7 +299,7 @@ def ask_replenishment_copilot(payload: AgentAskPayload) -> Dict[str, Any]:
         answer_text = (resp.text or "").strip() or fallback_answer
         return {
             "answer": answer_text,
-            "model": "gemini-2.5-flash",
+            "model": "Enterprise Operations Reasoning Engine",
             "reorder_id": selected["id"],
         }
     except Exception:

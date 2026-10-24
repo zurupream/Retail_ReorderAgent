@@ -9,5 +9,5 @@ Enterprise Retail, Distribution & Manufacturing supply-chain workbench that cont
    - `Days of Stock Cover = On-Hand Units / Daily Sales Velocity`
    - Flags `3.2x` velocity surges (`RO-2026-902`) for `HUMAN_BUYER_REVIEW` while clean breaches route to `AUTO_PR_READY`.
    - Rounds optimal order quantities to Vendor MOQ and Case Pack multiples.
-3. **Supply Chain & Replenishment AI Co-Pilot**: Powered by Vertex AI `gemini-2.5-flash` with deterministic replenishment fallback.
+3. **Supply Chain & Replenishment AI Co-Pilot**: Powered by Enterprise Operations Reasoning Engine with deterministic replenishment fallback.
 4. **ERP Purchase Requisition Authorization**: Print-ready executive Purchase Requisition authorization (`window.print()`).

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import ThemeSwitcher from './ThemeSwitcher';
 import {
   PackageCheck,
   ShieldCheck,
@@ -119,6 +120,7 @@ export default function SignInPage({ onAuthenticated }) {
       <header className="border-b border-gray-200/80 bg-white/80 backdrop-blur-md sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#0066CC] flex items-center justify-center text-white shadow-sm">
               <PackageCheck className="w-5 h-5" />
             </div>
@@ -139,6 +141,8 @@ export default function SignInPage({ onAuthenticated }) {
           <div className="hidden sm:flex items-center gap-2 text-xs text-gray-600 bg-gray-100 px-3 py-1.5 rounded-full">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             <span>Zero-Stockout Replenishment Control Plane</span>
+          </div>
+            <ThemeSwitcher />
           </div>
         </div>
       </header>
